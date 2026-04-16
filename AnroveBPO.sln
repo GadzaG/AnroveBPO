@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnroveBPO.Domain", "AnroveBPO.Domain\AnroveBPO.Domain.csproj", "{F706904C-6DF1-48FD-ACD1-2AE06CF5B4A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{09AE20E6-E0F2-4580-92F8-9195F52A655E}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{CB14FD4B-94D8-4444-9BC3-21AF35CAB335}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnroveBPO.Infrastructure.Postgres", "AnroveBPO.Infrastructure.Postgres\AnroveBPO.Infrastructure.Postgres.csproj", "{8B064573-4CEA-4FEA-A1E3-4D1AA3E5ECD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnroveBPO.Application", "AnroveBPO.Application\AnroveBPO.Application.csproj", "{633C4131-7D7A-4836-A790-B6D96BD634EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnroveBPO.Web", "AnroveBPO.Web\AnroveBPO.Web.csproj", "{B9B9C048-8397-4A48-B67E-67B70D78DEE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnroveBPO.Contracts", "AnroveBPO.Contracts\AnroveBPO.Contracts.csproj", "{A67A969C-5136-4269-B636-338E5E0BD5BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnroveBPO.Infrastructure.Identity", "AnroveBPO.Infrastructure.Identity\AnroveBPO.Infrastructure.Identity.csproj", "{46BE4A4C-7A13-477D-8216-45DA8F1EFDE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F706904C-6DF1-48FD-ACD1-2AE06CF5B4A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F706904C-6DF1-48FD-ACD1-2AE06CF5B4A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F706904C-6DF1-48FD-ACD1-2AE06CF5B4A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F706904C-6DF1-48FD-ACD1-2AE06CF5B4A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B064573-4CEA-4FEA-A1E3-4D1AA3E5ECD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B064573-4CEA-4FEA-A1E3-4D1AA3E5ECD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B064573-4CEA-4FEA-A1E3-4D1AA3E5ECD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B064573-4CEA-4FEA-A1E3-4D1AA3E5ECD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{633C4131-7D7A-4836-A790-B6D96BD634EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{633C4131-7D7A-4836-A790-B6D96BD634EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{633C4131-7D7A-4836-A790-B6D96BD634EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{633C4131-7D7A-4836-A790-B6D96BD634EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9B9C048-8397-4A48-B67E-67B70D78DEE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9B9C048-8397-4A48-B67E-67B70D78DEE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9B9C048-8397-4A48-B67E-67B70D78DEE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9B9C048-8397-4A48-B67E-67B70D78DEE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A67A969C-5136-4269-B636-338E5E0BD5BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A67A969C-5136-4269-B636-338E5E0BD5BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A67A969C-5136-4269-B636-338E5E0BD5BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A67A969C-5136-4269-B636-338E5E0BD5BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46BE4A4C-7A13-477D-8216-45DA8F1EFDE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46BE4A4C-7A13-477D-8216-45DA8F1EFDE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46BE4A4C-7A13-477D-8216-45DA8F1EFDE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46BE4A4C-7A13-477D-8216-45DA8F1EFDE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8B064573-4CEA-4FEA-A1E3-4D1AA3E5ECD7} = {CB14FD4B-94D8-4444-9BC3-21AF35CAB335}
+		{46BE4A4C-7A13-477D-8216-45DA8F1EFDE7} = {CB14FD4B-94D8-4444-9BC3-21AF35CAB335}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,20 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  anrovebpo.web:
+    build:
+      context: "/Users/anrove/Projects/AnroveBPO"
+      dockerfile: "AnroveBPO.Web/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net10.0/AnroveBPO.Web.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "anrovebpo.web:dev"
+    ports: []
+    volumes:
+    - "/Users/anrove/Projects/AnroveBPO/AnroveBPO.Web:/app:rw"
+    - "/Users/anrove/Projects/AnroveBPO:/src:rw"
+    - "/Users/anrove/.nuget/packages:/home/app/.nuget/packages"
+    working_dir: "/app"
