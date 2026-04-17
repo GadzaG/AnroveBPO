@@ -1,4 +1,4 @@
-﻿services:
+services:
   anrovebpo.web:
     container_name: anrove_bpo_api
     build:
@@ -8,7 +8,7 @@
       ASPNETCORE_ENVIRONMENT: Docker
       ASPNETCORE_URLS: http://+:8080
     ports:
-      - "3001:8080"
+      - "10000:8080"
     depends_on:
       postgres:
         condition: service_healthy
@@ -16,15 +16,15 @@
 
   postgres:
     container_name: anrove_bpo_postgres
-    image: postgres
+    image: postgres:18-alpine
     environment:
       POSTGRES_DB: anrove_bpo_db
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
-      - "3000:5432"
+      - "10001:5432"
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - postgres-data:/var/lib/postgresql
     healthcheck:
       test: [ "CMD-SHELL", "pg_isready -U postgres" ]
       interval: 5s
